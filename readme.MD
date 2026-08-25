@@ -84,3 +84,74 @@ Example:
 1 Critical vulnerability → Rating becomes E <br/>
 Security Rating = worst vulnerability decides
 
+### 🛠️ Maintainability Rating
+
+Rating based on Technical Debt Ratio
+Technical Debt Ratio formula:
+```
+(Total remediation cost / Development cost) × 100
+```
+1️⃣ Total Remediation Cost (SonarQube)
+What it means
+Example:
+Total time required to fix all Code Smells in the codebase.
+| Code Smell        | Fix Time |
+| ----------------- | -------- |
+| Long method       | 30 min   |
+| Duplicate code    | 1 hour   |
+| Bad variable name | 2 min    |
+
+```
+Total remediation cost = 1h 32m
+```
+
+2️⃣ Development Cost (SonarQube)
+What it means?
+Estimated time it would take to write the existing code from scratch.
+SonarQube uses a fixed heuristic:
+Development cost = Lines of Code × 30 minutes
+(30 minutes per line is SonarQube’s default assumption)
+
+Example
+
+Lines of Code: 1,000
+```
+Development cost = 1,000 × 30 min = 30,000 min ≈ 500 hours
+```
+
+**Real Example:**
+Lines of Code: 2,000
+
+Development cost = 2,000 × 30 min = 1,000 hours
+Total remediation cost = 50 hours
+```
+Technical Debt Ratio = (50 / 1000) × 100 = 5%
+```
+**Ratings:**
+A → ≤ 5%
+
+B → 6–10%
+
+C → 11–20%
+
+D → 21–50%
+
+E → > 50%
+
+Driven mainly by:
+
+Code smells
+
+Complexity
+
+Duplication
+
+➡️ Maintainability Rating = future change effort
+
+### 🎯 Reliability Rating
+
+Rating based on Bugs severity
+
+Blocker/Critical bugs push rating down fast
+
+➡️ Reliability = stability of the app
