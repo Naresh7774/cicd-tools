@@ -19,3 +19,13 @@ sudo systemctl enable jenkins
 * SonarQube scanner
 * Pipeline utility steps
 
+#### Master Agent Architecture
+* Create credentials to connect agent
+* Install Java in agent
+* Select Non verification strategy
+
+#### Credentials
+* SSH authentication
+* AWS credentials
+* Sonar token
+
