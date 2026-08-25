@@ -29,3 +29,14 @@ sudo systemctl enable jenkins
 * AWS credentials
 * Sonar token
 
+# Sonar
+
+### 🐞 Bugs
+
+An issue representing a coding error that will likely cause unexpected behavior or application failure. This seems fine but sometimes it may break in production.
+
+### 🔐 Vulnerabilities
+A security-related holes that can be exploited by attackers. This can be hacked
+
+### 👃 Code Smells
+A maintainability issue that does not break the app but makes the code hard to understand, change, or maintain. This works today, but hurts tomorrow
