@@ -56,3 +56,20 @@ Example timings SonarQube assumes: <br/>
 Rename variable → 2 min <br/>
 Reduce complexity → 30 min <br/>
 Remove duplication → 1h
+
+### 📋 Duplication
+Percentage or blocks of identical or near-identical code across files. copy-paste risk. Should be made as function and reuse it.
+
+### 📊 Coverage
+
+Percentage of code that is executed by unit tests.
+```
+Coverage = (Lines covered by tests / Lines to cover) × 100
+```
+
+Unit testing will give us a JSON report
+* Total test cases executed
+* How many passed, How many failed
+
+This report should be uploaded to SonarQube server through agent.
+
