@@ -40,3 +40,19 @@ A security-related holes that can be exploited by attackers. This can be hacked
 
 ### 👃 Code Smells
 A maintainability issue that does not break the app but makes the code hard to understand, change, or maintain. This works today, but hurts tomorrow
+
+**Technical Debt:**
+It is the estimated time required to fix all maintainability issues (code smells) in the codebase. That future pain = technical debt
+
+**Example:**
+Your project has:
+100 code smells
+Each smell estimated as 10 minutes to fix
+```
+Technical Debt = 100 × 10 min = 1000 minutes ≈ 16.6 hours
+```
+
+Example timings SonarQube assumes: <br/>
+Rename variable → 2 min <br/>
+Reduce complexity → 30 min <br/>
+Remove duplication → 1h
