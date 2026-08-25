@@ -73,3 +73,14 @@ Unit testing will give us a JSON report
 
 This report should be uploaded to SonarQube server through agent.
 
+### 🔒 Security Rating
+Rating based on severity of vulnerabilities
+
+**Ratings logic:**
+A → No vulnerabilities
+B–E → Based on highest severity found
+
+Example:
+1 Critical vulnerability → Rating becomes E <br/>
+Security Rating = worst vulnerability decides
+
